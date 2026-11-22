@@ -1,0 +1,58 @@
+{
+  "id": 91,
+  "titulo": "Bob decodifica",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "Z",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "CNOT",
+    "CZ"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "11"
+  },
+  "dica": "Para ler um par de Bell, desfaça o caminho que o criou, na ordem inversa.",
+  "explicacao": "A outra ponta da codificação superdensa. Alice já codificou a mensagem 11 no par de Bell (com Z e X). Agora você é Bob: monte o decodificador. O par de Bell foi criado com H e depois CNOT; para desemaranhar, desfaça isso de trás para frente."
+}

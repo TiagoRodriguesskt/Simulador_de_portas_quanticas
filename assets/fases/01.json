@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "titulo": "Primeiro giro",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "O X dá meia volta na esfera: o polo norte vira polo sul."
+}

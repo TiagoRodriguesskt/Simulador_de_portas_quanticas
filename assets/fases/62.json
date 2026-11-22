@@ -1,0 +1,82 @@
+{
+  "id": 62,
+  "titulo": "A CZ de meia troca",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "SQSWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "SQSWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Y",
+    "Z",
+    "S",
+    "SDG",
+    "T",
+    "H"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      0.5,
+      [
+        0.353553,
+        0.353553
+      ],
+      [
+        -0.353553,
+        -0.353553
+      ]
+    ]
+  },
+  "dica": "Entre as duas √SWAP vai um Z. Depois, uma S num qubit e uma S† no outro.",
+  "explicacao": "Nos computadores quânticos de spin (elétrons presos em pontos quânticos), a √SWAP é a porta natural de dois qubits. Para fazer uma CZ, eles usam duas √SWAP e algumas fases. O objetivo é o estado que a CZ daria. Preencha o slot entre as duas √SWAP e os dois do final para transformar meias trocas numa CZ."
+}

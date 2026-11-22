@@ -1,0 +1,46 @@
+{
+  "id": 46,
+  "titulo": "A S controlada",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "CH",
+    "CP"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      1,
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "A CZ põe um −1 no |11⟩. O alvo quer só um quarto disso: um i."
+}

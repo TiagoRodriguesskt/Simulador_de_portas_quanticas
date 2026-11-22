@@ -1,0 +1,44 @@
+{
+  "id": 31,
+  "titulo": "Troca de lugar",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "S",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "SWAP"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ],
+      0,
+      0
+    ]
+  },
+  "dica": "O qubit de cima está em |+i⟩. O objetivo quer esse mesmo estado no qubit de baixo."
+}

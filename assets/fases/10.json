@@ -1,0 +1,42 @@
+{
+  "id": 10,
+  "titulo": "Do outro lado do eixo y",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "Z",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "Leve o qubit ao equador e gire três quartos de volta. Meia volta mais um quarto também serve.",
+  "explicacao": "O alvo (|0⟩ − i|1⟩)/√2 fica no equador, apontando para o lado negativo do eixo y. Primeiro leve o qubit ao equador; depois gire em torno do eixo z até chegar lá."
+}

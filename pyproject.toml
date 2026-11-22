@@ -1,0 +1,9 @@
+[project]
+name = "qubit-lab"
+version = "1.0.0"
+description = "Jogo para aprender computação quântica com portas, a esfera de Bloch e sons de física."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

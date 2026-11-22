@@ -1,0 +1,42 @@
+{
+  "id": 11,
+  "titulo": "Um oitavo de volta",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "Sem a S na bandeja, monte o quarto de volta com dois oitavos."
+}

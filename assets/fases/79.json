@@ -1,0 +1,39 @@
+{
+  "id": 79,
+  "titulo": "As várias S",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "T",
+    "SDG",
+    "RZ",
+    "P",
+    "US"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "A S não está na bandeja, mas três cartas trabalham igual a ela.",
+  "explicacao": "O objetivo é levar |+⟩ até |+i⟩, um quarto de volta em torno do eixo z. A S faria isso, mas ela não está aqui. Três cartas da bandeja trabalham igual à S: uma é idêntica, outra difere só por uma fase global, e outra é a U com os ângulos certos. Tente achar as três."
+}

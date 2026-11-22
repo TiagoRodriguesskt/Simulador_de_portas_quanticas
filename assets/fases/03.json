@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "titulo": "Interferência",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "0"
+  },
+  "dica": "O qubit está em superposição. Existe uma porta que desfaz o que a H fez?",
+  "explicacao": "A H levou o qubit ao equador: agora |0⟩ e |1⟩ têm 50% de chance cada. Na física quântica, as amplitudes podem se somar ou se cancelar, como ondas. Uma porta certa faz o |1⟩ se cancelar e devolve o qubit ao |0⟩ com certeza."
+}

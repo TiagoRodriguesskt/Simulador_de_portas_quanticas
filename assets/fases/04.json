@@ -1,0 +1,35 @@
+{
+  "id": 4,
+  "titulo": "A fase escondida",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "O Z não muda as probabilidades… mas o que acontece na segunda H?"
+}

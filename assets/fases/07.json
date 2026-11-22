@@ -1,0 +1,42 @@
+{
+  "id": 7,
+  "titulo": "Par oposto",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  "dica": "Os dois qubits sempre discordam: quando um dá 0, o outro dá 1.",
+  "explicacao": "No estado de Bell que você criou, os dois qubits sempre concordam: os dois dão 0 ou os dois dão 1. Agora o objetivo é o contrário: um par emaranhado em que os qubits sempre discordam."
+}

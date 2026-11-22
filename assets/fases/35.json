@@ -1,0 +1,39 @@
+{
+  "id": 35,
+  "titulo": "A troca com chave",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CSWAP",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "H",
+    "Z",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "101"
+  },
+  "dica": "A Fredkin só troca os dois qubits de baixo se o de cima for 1."
+}

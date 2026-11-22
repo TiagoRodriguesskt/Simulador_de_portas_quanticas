@@ -1,0 +1,75 @@
+{
+  "id": 84,
+  "titulo": "Construa o oráculo",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "SWAP"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "101"
+  },
+  "dica": "No resultado, cada entrada que aparece como 1 é uma entrada que o oráculo consulta.",
+  "explicacao": "Agora o algoritmo já está montado, e o oráculo é com você. O objetivo pede as entradas em 10 no final. Na fase anterior, a função f(x) = x0 ⊕ x1 levou as entradas a 11. Que função leva a 10? Escreva-a no terceiro qubit com as portas da bandeja."
+}

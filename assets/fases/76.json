@@ -1,0 +1,61 @@
+{
+  "id": 76,
+  "titulo": "Um Z de vários jeitos",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.92388,
+      [
+        0.0,
+        0.382683
+      ]
+    ]
+  },
+  "dica": "Meia volta em torno de z: dá para chegar com quartos de volta, oitavos ou espelhos.",
+  "explicacao": "Agora o objetivo é o que um Z faria. Há vários caminhos: quartos de volta, oitavos de volta ou espelhos com H. Encontre qualquer um. O detector mostra o mínimo de portas, se você quiser caçar o caminho mais curto."
+}

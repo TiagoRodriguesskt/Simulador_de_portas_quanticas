@@ -1,0 +1,39 @@
+{
+  "id": 36,
+  "titulo": "Bell com um i",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "SWAP",
+    "CY"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "A CNOT faria o Bell comum. Qual controlada põe um i no |11⟩?"
+}

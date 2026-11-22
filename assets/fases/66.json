@@ -1,0 +1,36 @@
+{
+  "id": 66,
+  "titulo": "A CNOT disfarçada",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CZ",
+    "CY",
+    "CH",
+    "CU"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "O alvo é o Bell da fase 6. A CNOT não está na bandeja, mas uma U controlada com θ = π é um X controlado."
+}

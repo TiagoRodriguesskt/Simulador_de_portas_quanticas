@@ -1,0 +1,49 @@
+{
+  "id": 39,
+  "titulo": "Fase para três",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "TOFFOLI",
+    "CSWAP",
+    "CCZ"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "111"
+  },
+  "dica": "Entre duas H, uma inversão de fase vira uma inversão de bit."
+}

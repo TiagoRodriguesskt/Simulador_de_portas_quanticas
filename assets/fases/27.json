@@ -1,0 +1,34 @@
+{
+  "id": 27,
+  "titulo": "Parada no eixo y",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "SDG",
+    "T",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "A H leva o polo para o eixo x. Qual porta faz só um quarto de volta em torno do eixo x?",
+  "explicacao": "A √X gira um quarto de volta em torno do eixo x. Partindo do polo norte, ela não chega ao eixo x, como a H: o qubit para no eixo y, do lado negativo. Esse estado, (|0⟩ − i|1⟩)/√2, tem as mesmas chances que (|0⟩ + |1⟩)/√2, 50% e 50%, mas fica em outro ponto do equador."
+}

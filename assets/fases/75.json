@@ -1,0 +1,61 @@
+{
+  "id": 75,
+  "titulo": "X sem X",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "H",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.382683,
+      [
+        0.0,
+        0.92388
+      ]
+    ]
+  },
+  "dica": "Entre duas H, os eixos x e z trocam de papel. O que um Z vira?",
+  "explicacao": "Começa o capítulo de revisão: em cada fase, uma porta conhecida fica fora da bandeja, e você monta o mesmo efeito com outras. Aqui, o qubit começa num estado qualquer, e o objetivo é o que um X faria com ele. Não há X, nem √X, nem Y. Lembre da fase 4."
+}

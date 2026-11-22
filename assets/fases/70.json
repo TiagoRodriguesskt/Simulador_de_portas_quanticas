@@ -1,0 +1,63 @@
+{
+  "id": 70,
+  "titulo": "GHZ de quatro",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2,
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CH",
+    "SWAP"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "Na fase 17, o GHZ de três precisou de uma corrente de cópias. Com quatro, a corrente fica maior.",
+  "explicacao": "O estado GHZ junta todos os qubits num só emaranhado: ou todos são 0, ou todos são 1. Com quatro qubits, ele é (|0000⟩ + |1111⟩)/√2. O primeiro qubit já está em superposição. Passe essa superposição adiante, de vizinho em vizinho, até o último qubit."
+}

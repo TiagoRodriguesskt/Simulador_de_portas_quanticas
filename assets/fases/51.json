@@ -1,0 +1,33 @@
+{
+  "id": 51,
+  "titulo": "Bell numa porta só",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "RXX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "Até aqui, um estado de Bell pedia H e CNOT. Existe uma porta que faz tudo de uma vez."
+}

@@ -1,0 +1,77 @@
+{
+  "id": 74,
+  "titulo": "O sinal que volta",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "porta": "MCX",
+      "alvos": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "formula": "(|000⟩ + … + |110⟩ − |111⟩)/√8 ⊗ |−⟩"
+  },
+  "dica": "Se o alvo estiver em |−⟩, inverter o alvo só muda o sinal. E esse sinal fica no estado dos controles.",
+  "explicacao": "Um truque muito usado em algoritmos: o retorno de fase. Quando o alvo de uma porta controlada está em |−⟩, o X não muda nada nele, porque X|−⟩ = −|−⟩. O que muda é o sinal, e o sinal 'volta' para os controles. O objetivo tem os três primeiros qubits em |+⟩, com um sinal de menos só no |111⟩, e o último em |−⟩. Prepare o alvo com os dois slots."
+}

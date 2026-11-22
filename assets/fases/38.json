@@ -1,0 +1,77 @@
+{
+  "id": 38,
+  "titulo": "A CY disfarçada",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S",
+    "SDG",
+    "T",
+    "TDG"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.653281,
+      [
+        0.0,
+        -0.270598
+      ],
+      -0.270598,
+      [
+        0.0,
+        0.653281
+      ]
+    ]
+  },
+  "dica": "Y = S·X·S†: gire a fase para trás antes da CNOT e para frente depois.",
+  "explicacao": "A bandeja não tem a CY, mas tem a CNOT no circuito e portas de fase para usar em volta dela. O objetivo é o estado que a CY daria. A ideia é a mesma da fase 28: uma porta 'disfarçada' entre duas outras. Aqui, o X da CNOT vira um Y se o alvo girar um quarto de volta para trás antes e um quarto para frente depois. Como a fase só age no alvo, o controle não percebe nada."
+}

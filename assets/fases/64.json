@@ -1,0 +1,25 @@
+{
+  "id": 64,
+  "titulo": "Mesma letra, outros ângulos",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "Z",
+    "S",
+    "U",
+    "UX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "A U de antes (π/2, 0, π) é uma H. Com θ = π, o vetor vai até o outro polo."
+}

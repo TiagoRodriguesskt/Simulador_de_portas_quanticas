@@ -1,0 +1,6 @@
+# Bibliotecas necessárias para JOGAR o Qubit Lab.
+# Instale com:  pip install -r requirements.txt
+# Funciona em Linux, Windows e macOS (Python 3.10 ou mais novo).
+
+numpy>=2.0        # simulador quântico (vetores de estado e matrizes)
+pygame-ce>=2.5    # janela, gráficos e som (versão "community" do Pygame; usa "import pygame")

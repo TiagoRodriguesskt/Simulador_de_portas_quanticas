@@ -1,0 +1,33 @@
+{
+  "id": 5,
+  "titulo": "O outro lado do equador",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      -1
+    ]
+  },
+  "dica": "Mesmas chances que (|0⟩ + |1⟩)/√2, mas com a fase oposta. Há mais de um caminho.",
+  "explicacao": "(|0⟩ + |1⟩)/√2 e (|0⟩ − |1⟩)/√2 têm as mesmas chances, 50% e 50%. O que muda é a fase: o sinal de menos. Na esfera, são pontos opostos do equador. Existe mais de um caminho até lá."
+}

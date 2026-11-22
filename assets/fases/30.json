@@ -1,0 +1,51 @@
+{
+  "id": 30,
+  "titulo": "Bell com uma porta só",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S",
+    "SDG",
+    "T",
+    "TDG",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "Na fase 25 você precisou de duas portas. Agora existe uma que já deixa o qubit em (|0⟩ − i|1⟩)/√2.",
+  "explicacao": "Desafio do capítulo. O alvo é o mesmo da fase 25: o par de Bell com fase −i, (|00⟩ − i|11⟩)/√2. Lá, a solução usou duas portas: H e S†. Com a √X, existe um caminho mais curto. Dá para vencer com duas portas, mas o Mínimo agora é 1."
+}

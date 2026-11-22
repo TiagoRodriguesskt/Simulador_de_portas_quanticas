@@ -1,0 +1,86 @@
+{
+  "id": 85,
+  "titulo": "O número secreto",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        3
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        2,
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1011"
+  },
+  "dica": "É o mesmo truque de Deutsch–Jozsa, com três entradas. O resultado mostra o segredo.",
+  "explicacao": "O oráculo esconde um número secreto s de três bits e calcula s·x (o AND bit a bit, somado módulo 2). Classicamente, seriam precisas três consultas, uma por bit. O algoritmo de Bernstein–Vazirani descobre s numa consulta só: H nas três entradas, o oráculo, e H de novo. As entradas terminam exatamente em s. Olhe para as CNOTs fixas: qual é o segredo? (Repare no contador de mínimo: uma entrada que o oráculo não consulta nem precisa das H.)"
+}

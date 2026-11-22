@@ -1,0 +1,35 @@
+{
+  "id": 6,
+  "titulo": "Emaranhamento",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "A CNOT copia o qubit de cima… mas o que ela faz com uma superposição?"
+}

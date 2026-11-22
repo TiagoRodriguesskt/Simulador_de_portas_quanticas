@@ -1,0 +1,81 @@
+{
+  "id": 20,
+  "titulo": "Teleporte",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "CNOT",
+    "S",
+    "T",
+    "CZ"
+  ],
+  "objetivo": {
+    "tipo": "bloch",
+    "qubit": 2,
+    "alvo": [
+      1,
+      [
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    ]
+  },
+  "dica": "Crie um par de Bell entre os qubits 1 e 2. No fim, corrija o qubit 2 com X (controlado pelo 1) e Z (controlado pelo 0).",
+  "explicacao": "O teleporte quântico transfere o estado do qubit 0 para o qubit 2 sem mover o qubit. O ingrediente é um par de Bell entre os qubits 1 e 2. Depois de entrelaçar o qubit 0 com o par, duas correções controladas (um X e um Z) reconstroem o estado no qubit 2."
+}

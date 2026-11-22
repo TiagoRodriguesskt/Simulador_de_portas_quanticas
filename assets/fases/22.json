@@ -1,0 +1,44 @@
+{
+  "id": 22,
+  "titulo": "Voltando o relógio",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "S",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "S",
+    "SDG",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "0"
+  },
+  "dica": "A S girou um quarto de volta. Gire o mesmo quarto de volta, no sentido contrário."
+}

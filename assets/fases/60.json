@@ -1,0 +1,41 @@
+{
+  "id": 60,
+  "titulo": "Trabalham iguais",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "SWAP",
+    "ISWAP",
+    "CNOT",
+    "CZ",
+    "RXX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.0,
+      0.707107,
+      [
+        0.0,
+        0.707107
+      ],
+      0.0
+    ]
+  },
+  "dica": "O alvo é o estado da √SWAP, que não está na bandeja. Outra porta de dois qubits chega lá.",
+  "explicacao": "O objetivo é o estado que uma √SWAP deixaria a partir de |10⟩: metade da troca, com os qubits emaranhados. A √SWAP não está na bandeja. Mas, começando em |10⟩, uma das portas que você já conhece faz exatamente a mesma coisa. Descubra qual."
+}

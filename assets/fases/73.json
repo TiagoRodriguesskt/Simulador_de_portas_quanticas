@@ -1,0 +1,83 @@
+{
+  "id": 73,
+  "titulo": "A Z de muitos controles",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        3
+      ]
+    },
+    {
+      "porta": "MCX",
+      "alvos": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "formula": "(|0000⟩ + … + |1110⟩ − |1111⟩)/4"
+  },
+  "dica": "Entre duas H, um X vira um Z. Vale também quando o X tem três controles.",
+  "explicacao": "Todos os qubits estão em |+⟩. O objetivo é o mesmo estado, com um único sinal de menos: só no |1111⟩. É o que uma Z com três controles faria. Ela não está na bandeja, mas a MCX está no circuito, e você já viu na fase 39 que H em volta do alvo transforma X em Z."
+}

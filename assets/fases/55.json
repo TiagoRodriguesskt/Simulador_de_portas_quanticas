@@ -1,0 +1,75 @@
+{
+  "id": 55,
+  "titulo": "A Rzz disfarçada",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "T",
+    "RX",
+    "RY",
+    "RZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      [
+        -0.353553,
+        0.353553
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.353553,
+        0.353553
+      ]
+    ]
+  },
+  "dica": "Entre duas CNOTs, um giro em z no alvo vira um giro ZZ nos dois qubits. Mais de uma porta resolve.",
+  "explicacao": "Os computadores quânticos de supercondutores não têm a Rzz pronta: eles montam a porta com duas CNOTs e um giro no meio. A CNOT junta a informação dos dois qubits no alvo, o giro em z age sobre essa informação, e a segunda CNOT desfaz a junção. Encontre o giro que transforma isso numa Rzz(π/2). Lembre que Rz e S só diferem por uma fase global."
+}

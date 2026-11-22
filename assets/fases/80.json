@@ -1,0 +1,39 @@
+{
+  "id": 80,
+  "titulo": "Bell por vários caminhos",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "RY",
+    "SX",
+    "CNOT",
+    "CU",
+    "CY"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "Superposição no primeiro qubit, depois uma cópia. Mais de uma carta faz cada parte.",
+  "explicacao": "O estado de Bell da fase 6, (|00⟩ + |11⟩)/√2. Na fase 6, era H e CNOT. Aqui há outras cartas que fazem o mesmo trabalho: uma porta que leva |0⟩ até |+⟩ sem ser a H, e uma controlada que funciona igual à CNOT. Mais de uma combinação resolve."
+}

@@ -1,0 +1,95 @@
+{
+  "id": 78,
+  "titulo": "CNOT de cabeça para baixo",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.653281,
+      [
+        0.191342,
+        -0.191342
+      ],
+      [
+        0.46194,
+        0.46194
+      ],
+      [
+        0.0,
+        -0.270598
+      ]
+    ]
+  },
+  "dica": "Com H nos dois qubits, antes e depois, controle e alvo trocam de papel.",
+  "explicacao": "O circuito tem uma CNOT com o controle em cima, mas o objetivo é o que uma CNOT com o controle embaixo faria. Parece impossível sem mexer nos fios, mas não é: H nos dois qubits, antes e depois, inverte os papéis de controle e alvo. É um dos truques mais usados para adaptar circuitos ao hardware."
+}

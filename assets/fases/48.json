@@ -1,0 +1,55 @@
+{
+  "id": 48,
+  "titulo": "A fase global vira local",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CRZ",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "S",
+    "T",
+    "SDG",
+    "TDG",
+    "RZ",
+    "P"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      0.5,
+      0.5,
+      [
+        0.0,
+        0.5
+      ]
+    ]
+  },
+  "dica": "A diferença entre CRz e CP só aparece quando o controle é 1: é uma fase no controle.",
+  "explicacao": "Uma Rz(π/2) é igual a uma P(π/2) vezes uma fase global e^(−iπ/4), que não muda nada sozinha. Mas na CRz, essa fase só acontece quando o controle é 1. Uma fase que depende do controle não é mais global: ela vira uma fase de verdade no qubit de controle. O circuito tem uma CRz, e o objetivo é o estado que a CP daria. Descubra que fase colocar no controle para compensar a diferença."
+}

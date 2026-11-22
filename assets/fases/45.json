@@ -1,0 +1,63 @@
+{
+  "id": 45,
+  "titulo": "A Rx feita de Rz",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "RZ",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Y",
+    "Z",
+    "H",
+    "T",
+    "SX",
+    "RY"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.382683,
+      [
+        0.0,
+        -0.92388
+      ]
+    ]
+  },
+  "dica": "A H troca os eixos x e z. Um giro em z entre duas H vira um giro em x.",
+  "explicacao": "O circuito tem uma Rz(π/2) fixa e o objetivo é o estado que uma Rx(π/2) daria. Não há Rx na bandeja. A H troca os papéis dos eixos x e z da esfera, então dá para 'traduzir' um giro em z num giro em x usando os dois slots em volta da Rz."
+}

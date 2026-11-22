@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "titulo": "Superposição",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      1
+    ]
+  },
+  "dica": "Leve o qubit do polo até o equador da esfera."
+}

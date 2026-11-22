@@ -1,0 +1,108 @@
+{
+  "id": 82,
+  "titulo": "A Rxx feita à mão",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "S",
+    "T",
+    "RZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.353553,
+      [
+        0.5,
+        -0.353553
+      ],
+      [
+        0.0,
+        0.353553
+      ],
+      [
+        0.353553,
+        -0.5
+      ]
+    ]
+  },
+  "dica": "CNOT, giro em z, CNOT dá a Rzz (fase 55). H nos dois qubits em volta transforma Rzz em Rxx (fase 56).",
+  "explicacao": "O desafio do capítulo junta duas traduções. Na fase 55, você viu que CNOT, um giro em z no alvo e CNOT formam uma Rzz. Na fase 56, que H nos dois qubits, antes e depois, transformam a Rzz numa Rxx. Agora faça as duas coisas ao mesmo tempo: o objetivo é o estado que a Rxx daria."
+}

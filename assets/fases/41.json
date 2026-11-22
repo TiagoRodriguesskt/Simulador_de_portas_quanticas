@@ -1,0 +1,32 @@
+{
+  "id": 41,
+  "titulo": "Um quarto de volta em x",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S",
+    "T",
+    "RX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "A H leva o polo para o eixo x. O alvo está no eixo y, do lado negativo."
+}

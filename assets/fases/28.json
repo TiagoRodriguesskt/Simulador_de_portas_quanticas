@@ -1,0 +1,46 @@
+{
+  "id": 28,
+  "titulo": "A raiz disfarçada",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "S",
+    "SDG",
+    "T",
+    "TDG"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "A H troca os eixos x e z. Um quarto de volta em z, entre duas H, vira um quarto de volta em x.",
+  "explicacao": "O alvo é o mesmo da fase anterior, mas a √X não está na bandeja. Lembra que H·Z·H = X? A H troca os eixos x e z da esfera. Então uma porta que gira um quarto de volta em torno de z, colocada entre duas H, passa a girar um quarto de volta em torno de x: vira uma √X disfarçada."
+}

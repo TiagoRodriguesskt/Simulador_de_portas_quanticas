@@ -1,0 +1,73 @@
+{
+  "id": 98,
+  "titulo": "GHZ sem CNOT",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "CZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "Cada CNOT do GHZ pode ser uma CZ com H no alvo antes e depois (fase 77).",
+  "explicacao": "O GHZ de três qubits, (|000⟩ + |111⟩)/√2, como na fase 17. Mas a bandeja não tem CNOT, só CZ. Muitos computadores quânticos só têm a CZ como porta nativa de dois qubits, e traduzem cada CNOT assim."
+}

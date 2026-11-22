@@ -1,0 +1,45 @@
+{
+  "id": 89,
+  "titulo": "Lendo uma fase",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "CH"
+  ],
+  "objetivo": {
+    "tipo": "qubit",
+    "qubit": 0,
+    "valor": 1
+  },
+  "dica": "O |1⟩ não muda com Z, só ganha um sinal. Com a porta controlada, esse sinal vai para o controle.",
+  "explicacao": "A estimativa de fase descobre quanto uma porta gira a fase de um estado que ela não muda (um autoestado). Aqui, o qubit de baixo está em |1⟩, e o Z deixa ele em −|1⟩: uma fase de meia volta. Com o qubit de cima em |+⟩ controlando a porta, essa fase volta para ele (o retorno de fase da fase 74), e a H final transforma a fase num 1 medido."
+}

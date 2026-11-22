@@ -1,0 +1,40 @@
+{
+  "id": 43,
+  "titulo": "A S com outro nome",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "SDG",
+    "T",
+    "SX",
+    "RX",
+    "RZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "Sem a S na bandeja: qual porta gira um quarto de volta em torno do eixo z?"
+}

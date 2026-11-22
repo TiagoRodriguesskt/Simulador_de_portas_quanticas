@@ -1,0 +1,77 @@
+{
+  "id": 94,
+  "titulo": "Orçamento apertado",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "S",
+    "T",
+    "Z",
+    "H"
+  ],
+  "max_portas": 2,
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.92388,
+      -0.382683
+    ]
+  },
+  "dica": "S† é três quartos de volta. Três S funcionam, mas o orçamento é de duas portas.",
+  "explicacao": "Uma regra nova para o final: o orçamento. O objetivo é o que uma S† faria, e a S† não está na bandeja. Seis T dariam certo, e três S também, mas esta fase só aceita soluções com no máximo duas portas. Pense em quanto cada porta gira em torno do eixo z."
+}

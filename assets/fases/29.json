@@ -1,0 +1,39 @@
+{
+  "id": 29,
+  "titulo": "Desfazendo a raiz",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "SX",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "SDG",
+    "T",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "0"
+  },
+  "dica": "Para voltar, falta girar três quartos de volta em x. Ou procure outro caminho: existe mais de um.",
+  "explicacao": "O circuito começa com uma √X, e não há √X† na bandeja para desfazê-la. Quatro √X dão uma volta inteira, então faltam três quartos de volta, e você só tem dois slots. Há mais de um jeito de resolver: tente achar um, depois procure outro. O contador de Mínimo mostra se o seu caminho é o mais curto."
+}

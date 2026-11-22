@@ -1,0 +1,39 @@
+{
+  "id": 15,
+  "titulo": "Dois controles",
+  "qubits": 3,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "TOFFOLI",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "111"
+  },
+  "dica": "A Toffoli só inverte o terceiro qubit se os dois de cima forem 1."
+}

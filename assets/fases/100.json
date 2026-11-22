@@ -1,0 +1,116 @@
+{
+  "id": 100,
+  "titulo": "O laboratório completo",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "Z",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2,
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "TOFFOLI",
+    "CSWAP",
+    "CCZ"
+  ],
+  "objetivo": {
+    "tipo": "bloch",
+    "qubit": 0,
+    "alvo": [
+      0.707107,
+      [
+        0.5,
+        0.5
+      ]
+    ]
+  },
+  "dica": "Entre duas H, um Z vira um X. Traduza o erro de fase num erro de bit, e corrija como na fase 99.",
+  "explicacao": "A fase final junta quase tudo o que você aprendeu. O erro agora é de fase: um Z no qubit 0, que o código da fase 99 não enxerga. Mas você sabe traduzir: entre duas H, um Z vira um X (fases 4 e 75). Com H antes e depois do erro, o erro de fase vira um erro de bit, que a porta certa no final corrige. O código de inversão de fase completo põe H nos três qubits, para se proteger de um erro em qualquer um deles; como aqui o erro é no qubit 0, dá para fazer com menos. É um dos primeiros passos rumo aos computadores quânticos tolerantes a erros."
+}

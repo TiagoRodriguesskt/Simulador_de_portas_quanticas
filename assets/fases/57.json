@@ -1,0 +1,49 @@
+{
+  "id": 57,
+  "titulo": "A troca de Ising",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "SWAP",
+    "ISWAP",
+    "CZ",
+    "RXX",
+    "RYY",
+    "RZZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        -1
+      ],
+      0,
+      0
+    ]
+  },
+  "dica": "Rxx e Ryy, uma depois da outra, formam uma troca com fase. Qual fase?",
+  "explicacao": "O qubit de cima está em |+⟩. O objetivo quer o estado dele no qubit de baixo, mas girado até |−i⟩: uma troca com um −i. A SWAP troca sem fase, e a iSWAP troca com +i. Nenhuma das duas serve sozinha. Duas portas de Ising, juntas, fazem exatamente essa troca."
+}

@@ -1,0 +1,42 @@
+{
+  "id": 9,
+  "titulo": "Dois quartos fazem meia",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "Lembra da fase 4? Ali o Z resolvia. Quantos S formam um Z?",
+  "explicacao": "A S gira um quarto de volta em torno do eixo z. Quatro quartos fazem uma volta inteira, e dois quartos fazem meia volta, que é exatamente o que o Z faz. Lembre-se da fase 4: entre duas H, meia volta em z decide o resultado."
+}

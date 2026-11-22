@@ -1,0 +1,45 @@
+{
+  "id": 69,
+  "titulo": "O AND de três",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "MCX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1111"
+  },
+  "dica": "A MCX só inverte o último qubit se os três controles forem 1. Falta um deles."
+}

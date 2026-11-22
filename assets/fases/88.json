@@ -1,0 +1,64 @@
+{
+  "id": 88,
+  "titulo": "A transformada de Fourier",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "SWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "S",
+    "T",
+    "CZ",
+    "CP",
+    "CNOT"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      [
+        0.0,
+        0.5
+      ],
+      -0.5,
+      [
+        0.0,
+        -0.5
+      ]
+    ]
+  },
+  "dica": "H no primeiro, a fase controlada de um quarto de volta, H no segundo. A SWAP do final já está lá.",
+  "explicacao": "A transformada de Fourier quântica (QFT) é a peça central do algoritmo de Shor. Ela transforma cada número x num estado em que as fases giram em ritmo x: de |01⟩, as fases andam um quarto de volta por termo (1, i, −1, −i). Com dois qubits, a receita é: H no primeiro qubit, uma fase controlada de π/2, H no segundo, e uma SWAP para pôr os qubits na ordem certa."
+}

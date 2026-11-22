@@ -1,0 +1,36 @@
+{
+  "id": 8,
+  "titulo": "Um quarto de volta",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "O Z dá meia volta no equador. Você precisa só de um quarto: de x até y."
+}

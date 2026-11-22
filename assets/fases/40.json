@@ -1,0 +1,63 @@
+{
+  "id": 40,
+  "titulo": "GHZ pela fase",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "CCZ",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "S",
+    "H",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "A Toffoli é uma CCZ com H no alvo antes e depois.",
+  "explicacao": "Na fase 17 você criou o estado GHZ, (|000⟩ + |111⟩)/√2, usando uma Toffoli. Agora o circuito tem uma CCZ no lugar dela. A CCZ não troca bits, só inverte a fase de |111⟩. Use os dois slots do terceiro qubit para transformar essa inversão de fase numa inversão de bit."
+}

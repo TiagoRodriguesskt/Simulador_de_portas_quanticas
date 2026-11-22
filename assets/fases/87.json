@@ -1,0 +1,57 @@
+{
+  "id": 87,
+  "titulo": "Dois bits num qubit",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "11"
+  },
+  "dica": "Nada = 00, X = 01, Z = 10. E para 11?",
+  "explicacao": "Codificação superdensa: Alice e Bob dividem um par de Bell. Alice mexe só no qubit dela (o de cima) e o envia para Bob. Mesmo mandando um qubit só, ela consegue transmitir dois bits: Bob desfaz o emaranhamento e lê as duas mensagens. Sem nada, Bob lê 00; com um X, 01; com um Z, 10. Faça Bob ler 11."
+}

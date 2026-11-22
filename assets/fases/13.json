@@ -1,0 +1,44 @@
+{
+  "id": 13,
+  "titulo": "Bell com a fase trocada",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      -1
+    ]
+  },
+  "dica": "Antes da CNOT, o qubit de cima precisa estar em (|0⟩ − |1⟩)/√2. Há dois caminhos.",
+  "explicacao": "Antes, o par de Bell era (|00⟩ + |11⟩)/√2. Agora queremos (|00⟩ − |11⟩)/√2: o mesmo emaranhamento, com a fase trocada. A CNOT copia para o par o que estiver no qubit de cima, inclusive a fase."
+}

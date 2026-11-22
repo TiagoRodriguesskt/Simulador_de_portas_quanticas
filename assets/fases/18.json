@@ -1,0 +1,51 @@
+{
+  "id": 18,
+  "titulo": "O algoritmo de Deutsch",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "Z",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "qubit",
+    "qubit": 0,
+    "valor": 1
+  },
+  "dica": "A CNOT é um oráculo 'balanceado'. Com H antes e depois, uma única consulta revela isso no qubit 0.",
+  "explicacao": "O oráculo é uma caixa-preta que calcula uma função f(x) de um bit. Classicamente, para saber se f é constante ou balanceada, você precisa consultá-la duas vezes. O algoritmo de Deutsch descobre com uma única consulta, usando superposição e interferência: o resultado aparece no qubit 0."
+}

@@ -1,0 +1,51 @@
+{
+  "id": 24,
+  "titulo": "Dois oitavos para trás",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "S",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "T",
+    "TDG"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "0"
+  },
+  "dica": "Sem a S† na bandeja, monte o quarto de volta para trás com dois oitavos.",
+  "explicacao": "Na fase anterior, a T† desfez a T. Agora o circuito tem uma S, um quarto de volta, e a bandeja não tem a S†. Assim como duas T formam uma S, duas T† formam uma S†: dá para desfazer um giro grande em passos menores."
+}

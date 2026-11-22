@@ -1,0 +1,53 @@
+{
+  "id": 59,
+  "titulo": "Voltar da meia troca",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "SQSWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "SWAP",
+    "CZ",
+    "CNOT",
+    "SQSWAP"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "10"
+  },
+  "dica": "Quatro meias trocas dão uma volta completa. Mas uma troca inteira vale duas meias.",
+  "explicacao": "A √SWAP fixa deixou os qubits no meio de uma troca, emaranhados. O objetivo é voltar ao |10⟩ do começo. Uma ideia é completar a volta: quatro meias trocas levam de volta ao início. Mas dá para fazer com menos portas, se você lembrar quanto vale uma SWAP inteira."
+}

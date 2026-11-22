@@ -1,0 +1,55 @@
+{
+  "id": 81,
+  "titulo": "Y feito de X e Z",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.382683,
+      [
+        0.0,
+        -0.92388
+      ]
+    ]
+  },
+  "dica": "Y = iXZ: um X e um Z, em qualquer ordem, dão o Y a menos de uma fase global.",
+  "explicacao": "O objetivo é o que um Y faria. O Y gira meia volta em torno do eixo y. Um X gira meia volta em torno de x, e um Z em torno de z. Duas meias voltas em eixos perpendiculares dão meia volta em torno do terceiro eixo."
+}

@@ -1,0 +1,34 @@
+{
+  "id": 63,
+  "titulo": "Quem é essa U?",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "S",
+    "T",
+    "U"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      -1
+    ]
+  },
+  "dica": "O alvo é o |−⟩. Antes, quem levava |1⟩ até ele era a H. A H não está na bandeja..."
+}

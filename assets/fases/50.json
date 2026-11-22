@@ -1,0 +1,43 @@
+{
+  "id": 50,
+  "titulo": "A H que não é H",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CH",
+    "CRX",
+    "CRY",
+    "CRZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.0,
+      0.707107,
+      -0.5,
+      0.5
+    ]
+  },
+  "dica": "Com o alvo em |0⟩, a CH e a CRy dão o mesmo resultado. Com o alvo em |1⟩, não."
+}

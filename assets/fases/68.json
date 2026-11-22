@@ -1,0 +1,37 @@
+{
+  "id": 68,
+  "titulo": "Não estrague nada",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Y",
+    "Z",
+    "H",
+    "S",
+    "T",
+    "I"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      1
+    ]
+  },
+  "completo": true,
+  "dica": "O qubit já está no alvo. Qual porta não mexe em nada?",
+  "explicacao": "Desta vez, o circuito já chega ao objetivo: a H deixa o qubit em |+⟩. Mas há uma regra nova: o slot precisa de uma porta, ele não pode ficar vazio. Todas as portas que você conhece giram ou espelham o vetor... menos uma. Parece inútil, mas ela aparece o tempo todo: é o que sobra quando uma porta encontra a sua inversa, e nos computadores reais marca um intervalo em que o qubit só espera."
+}

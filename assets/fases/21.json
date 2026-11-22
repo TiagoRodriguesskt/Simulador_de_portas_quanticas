@@ -1,0 +1,36 @@
+{
+  "id": 21,
+  "titulo": "O eixo que faltava",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "Entre duas H, o X vira um Z, e o Z vira um X. E o Y, em qual eixo ele gira?"
+}

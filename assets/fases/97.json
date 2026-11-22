@@ -1,0 +1,139 @@
+{
+  "id": 97,
+  "titulo": "Quando 100% não existe",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CCZ",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "CCZ",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S"
+  ],
+  "completo": true,
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "101",
+    "minimo": 0.78
+  },
+  "dica": "A CCZ marca o |111⟩. Para marcar o |101⟩, o qubit do meio precisa parecer 1 quando ele é 0.",
+  "explicacao": "A busca de Grover com três qubits: oito itens, e o procurado é o |101⟩. Com dois qubits, uma rodada de Grover acertava sempre. Com três, uma rodada leva a chance de 12,5% para 78%, e a busca perfeita não existe: nem com mais rodadas o acerto chega a 100%. Por isso, aqui o detector acende com 78%. Monte o oráculo em volta da CCZ; os dois slots precisam de porta."
+}

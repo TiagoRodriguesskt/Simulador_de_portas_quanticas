@@ -1,0 +1,40 @@
+{
+  "id": 49,
+  "titulo": "Meio NOT condicional",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CY",
+    "CH",
+    "CRX",
+    "CRZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.707107,
+      0.0,
+      0.5,
+      [
+        0.0,
+        -0.5
+      ]
+    ]
+  },
+  "dica": "Metade das vezes o controle é 1, e o alvo gira um quarto de volta em torno do eixo x."
+}

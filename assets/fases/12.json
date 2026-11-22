@@ -1,0 +1,38 @@
+{
+  "id": 12,
+  "titulo": "Fase de 45°",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    ]
+  },
+  "dica": "O alvo fica no equador, a meio caminho entre x e y.",
+  "explicacao": "O alvo fica no equador, a meio caminho entre o eixo x e o eixo y: um giro de 45° depois de chegar ao equador. A T é exatamente um oitavo de volta."
+}

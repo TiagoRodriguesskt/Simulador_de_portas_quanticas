@@ -1,0 +1,33 @@
+{
+  "id": 52,
+  "titulo": "O giro YY",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CY",
+    "RXX",
+    "RYY"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "A Rxx faz o Bell com −i. O alvo quer o mesmo estado, com +i."
+}

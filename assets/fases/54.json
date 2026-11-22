@@ -1,0 +1,45 @@
+{
+  "id": 54,
+  "titulo": "O Bell de sempre",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "RXX",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "SDG",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "A Rxx deixa um −i no |11⟩. Um i em um dos qubits cancela: tanto faz qual.",
+  "explicacao": "A Rxx cria o estado de Bell numa porta só, mas com uma fase: (|00⟩ − i|11⟩)/√2. O objetivo é o Bell comum, (|00⟩ + |11⟩)/√2, o mesmo da fase 6. Uma porta de fase num dos qubits só age no |1⟩ dele, e por isso só muda o termo |11⟩. Descubra qual fase transforma −i em 1."
+}

@@ -1,0 +1,44 @@
+{
+  "id": 44,
+  "titulo": "Dois quartos de fase",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "T",
+    "SX",
+    "RX",
+    "RZ",
+    "P"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "Entre duas H, um Z vira um X. Monte o Z com dois quartos de volta em torno do eixo z: há mais de um jeito."
+}

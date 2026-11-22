@@ -1,0 +1,50 @@
+{
+  "id": 17,
+  "titulo": "Três em sintonia",
+  "qubits": 3,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "CNOT",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "É o estado GHZ: crie a superposição e passe-a adiante, qubit por qubit.",
+  "explicacao": "O estado GHZ, (|000⟩ + |111⟩)/√2, é o estado de Bell de três qubits: medir qualquer um deles define os outros dois. A ideia é criar uma superposição e passá-la adiante, qubit por qubit."
+}

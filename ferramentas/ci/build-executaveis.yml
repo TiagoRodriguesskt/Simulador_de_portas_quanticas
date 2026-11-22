@@ -1,0 +1,75 @@
+# Gera os executáveis do Qubit Lab para Linux, Windows e macOS no GitHub.
+#
+# COMO ATIVAR: copie este arquivo para  .github/workflows/build-executaveis.yml
+# e envie para o GitHub. A cada nova tag (ex.: v0.1.0) os três executáveis
+# são gerados e publicados na página "Releases" do repositório, prontos
+# para qualquer pessoa baixar. Também dá para rodar à mão na aba "Actions".
+
+name: Executáveis
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            pacote: QubitLab-linux
+          - os: windows-latest
+            pacote: QubitLab-windows
+          - os: macos-latest
+            pacote: QubitLab-macos
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r requirements-dev.txt
+
+      - name: Testes
+        run: python -m pytest -q
+
+      - name: Gerar executável
+        run: python ferramentas/gerar_executavel.py
+
+      - name: Compactar (Linux)
+        if: runner.os == 'Linux'
+        run: cd dist && tar -czf ../${{ matrix.pacote }}.tar.gz QubitLab
+
+      - name: Compactar (Windows)
+        if: runner.os == 'Windows'
+        run: Compress-Archive -Path dist/QubitLab.exe -DestinationPath ${{ matrix.pacote }}.zip
+
+      - name: Compactar (macOS)
+        if: runner.os == 'macOS'
+        run: cd dist && ditto -c -k --keepParent QubitLab.app ../${{ matrix.pacote }}.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.pacote }}
+          path: ${{ matrix.pacote }}.*
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: QubitLab-*

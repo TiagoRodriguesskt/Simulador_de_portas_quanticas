@@ -1,0 +1,106 @@
+{
+  "id": 86,
+  "titulo": "Grover em outro endereço",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CZ",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CZ",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S"
+  ],
+  "completo": true,
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "01"
+  },
+  "dica": "A CZ marca o |11⟩. Para marcar o |01⟩, o primeiro qubit precisa parecer 1 quando ele é 0.",
+  "explicacao": "Na fase 19, a busca de Grover achou o |11⟩, marcado pela CZ. Agora o item procurado é o |01⟩. A segunda metade do circuito (a difusão) já está pronta. Monte o oráculo: a CZ só marca quando os dois qubits são 1, então inverta o primeiro qubit antes e desinverta depois, como na fase 72. Os dois slots do oráculo precisam de porta: um oráculo sempre desfaz o que inverteu."
+}

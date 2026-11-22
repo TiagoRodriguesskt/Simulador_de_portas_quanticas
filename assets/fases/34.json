@@ -1,0 +1,71 @@
+{
+  "id": 34,
+  "titulo": "Duas trocas não desfazem",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "ISWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "ISWAP",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "S",
+    "H",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "00"
+  },
+  "dica": "Duas iSWAP deixam um Z em cada qubit: |+⟩ volta como |−⟩. Mais de uma porta resolve.",
+  "explicacao": "A SWAP aplicada duas vezes não faz nada: os qubits vão e voltam. Com a iSWAP é diferente. Cada troca põe um i na fase, e i·i = −1. Os dois qubits começam em |+⟩ e, depois de duas iSWAP, voltam para o lugar com uma fase que não estava lá. Descubra o que tira essa fase antes das H do final. Existe mais de uma resposta."
+}

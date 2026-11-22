@@ -1,0 +1,75 @@
+{
+  "id": 83,
+  "titulo": "Deutsch–Jozsa",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "H",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "111"
+  },
+  "dica": "H em todos antes do oráculo; H nas entradas depois. Uma função balanceada não deixa as entradas em 00.",
+  "explicacao": "O oráculo (as duas CNOTs fixas) calcula uma função f das duas entradas e escreve o resultado no terceiro qubit. A pergunta de Deutsch–Jozsa é: f é constante (sempre 0 ou sempre 1) ou balanceada (0 em metade das entradas)? Um computador clássico pode precisar testar 3 entradas. O quântico testa todas de uma vez: H nas entradas antes, para consultar todas juntas; o terceiro qubit em |−⟩, para a resposta virar fase; e H nas entradas depois, para a interferência mostrar o resultado. Se as entradas não terminarem em 00, a função é balanceada."
+}

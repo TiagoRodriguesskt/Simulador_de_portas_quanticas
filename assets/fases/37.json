@@ -1,0 +1,36 @@
+{
+  "id": 37,
+  "titulo": "Superposição pela metade",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "CH"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.7071067811865476,
+      0,
+      0.5,
+      0.5
+    ]
+  },
+  "dica": "Metade das vezes o controle é 0 e nada acontece. Na outra metade, o alvo entra em superposição."
+}

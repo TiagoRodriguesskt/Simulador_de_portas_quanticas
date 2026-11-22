@@ -1,0 +1,68 @@
+{
+  "id": 95,
+  "titulo": "Desfaça tudo",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "S",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "S",
+    "T",
+    "SDG",
+    "TDG"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "0"
+  },
+  "dica": "Para desfazer, use as inversas, na ordem contrária: a última porta é desfeita primeiro.",
+  "explicacao": "Quatro portas levaram o qubit para longe do |0⟩. Leve-o de volta. Desfazer um circuito é aplicar a inversa de cada porta, na ordem contrária, como tirar as meias depois de tirar os sapatos. A H é a inversa dela mesma; S e T têm as suas inversas na bandeja."
+}

@@ -1,0 +1,53 @@
+{
+  "id": 72,
+  "titulo": "Controle invertido",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    },
+    {
+      "porta": "MCX",
+      "alvos": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1101"
+  },
+  "dica": "Uma inversão antes e outra depois fazem a MCX acender com o controle em 0, e devolvem o controle ao que era.",
+  "explicacao": "A MCX acende quando os três controles são 1. E se a gente quiser que ela acenda quando o terceiro controle for 0? O truque é inverter esse controle antes da porta e desinverter depois. O alvo pede o terceiro qubit em 0 no final, e o último em 1."
+}

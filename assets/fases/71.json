@@ -1,0 +1,65 @@
+{
+  "id": 71,
+  "titulo": "GHZ com AND",
+  "qubits": 4,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "SWAP",
+    "MCX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "Se os três primeiros qubits forem sempre iguais, o AND deles é igual a qualquer um deles.",
+  "explicacao": "O mesmo GHZ de quatro, mas o último slot só aceita uma porta de 4 qubits. Monte o GHZ de três nos primeiros qubits. Depois, repare: quando três qubits são todos 0 ou todos 1, o AND deles é uma cópia. A MCX escreve esse AND no quarto qubit."
+}

@@ -1,0 +1,49 @@
+{
+  "id": 16,
+  "titulo": "O AND quântico",
+  "qubits": 3,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "TOFFOLI",
+      "alvos": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "dica": "O qubit 1 precisa ser 1 sempre; o qubit 0 fica em dúvida. O terceiro vira o AND dos dois.",
+  "explicacao": "A Toffoli calcula o AND dos dois qubits de cima no terceiro, sem apagar as entradas. Se um dos controles estiver em superposição, o resultado também fica: o terceiro qubit se emaranha com ele."
+}

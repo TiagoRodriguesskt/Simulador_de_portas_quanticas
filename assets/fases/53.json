@@ -1,0 +1,49 @@
+{
+  "id": 53,
+  "titulo": "Iguais e diferentes",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CZ",
+    "CP",
+    "CRZ",
+    "RXX",
+    "RZZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.5
+      ],
+      0.5
+    ]
+  },
+  "dica": "No alvo, |01⟩ e |10⟩ (qubits diferentes) têm uma fase, e |00⟩ e |11⟩ (iguais) têm outra."
+}

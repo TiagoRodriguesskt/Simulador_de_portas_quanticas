@@ -1,0 +1,85 @@
+{
+  "id": 96,
+  "titulo": "Teleporte do zero",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        2
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "CNOT",
+    "CZ"
+  ],
+  "objetivo": {
+    "tipo": "bloch",
+    "qubit": 2,
+    "alvo": [
+      0.92388,
+      [
+        0.0,
+        -0.382683
+      ]
+    ]
+  },
+  "dica": "Par de Bell entre 1 e 2; medição de Bell em 0 e 1 (CNOT e H); correções no 2 (CNOT e CZ).",
+  "explicacao": "Na fase 20, o teleporte veio quase pronto. Agora você monta tudo: o qubit 0 está num estado qualquer (preparado com H, T e H), e esse estado precisa chegar ao qubit 2. Primeiro, crie um par de Bell entre os qubits 1 e 2. Depois, faça a 'medição de Bell' nos qubits 0 e 1 (uma CNOT e uma H). Por fim, as correções no qubit 2, controladas pelos outros: um X controlado pelo qubit 1 e um Z controlado pelo qubit 0."
+}

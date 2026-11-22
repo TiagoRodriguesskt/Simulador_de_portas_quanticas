@@ -1,0 +1,83 @@
+{
+  "id": 77,
+  "titulo": "CNOT feita de CZ",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "CZ",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.653281,
+      [
+        0.0,
+        -0.270598
+      ],
+      [
+        0.191342,
+        -0.191342
+      ],
+      [
+        0.46194,
+        0.46194
+      ]
+    ]
+  },
+  "dica": "A CZ põe um Z no alvo quando o controle é 1. Entre duas H, Z vira X.",
+  "explicacao": "Não há CNOT na bandeja, mas há uma CZ fixa no circuito. A CZ aplica um Z no segundo qubit quando o primeiro é 1, e a CNOT aplica um X. Use os dois slots do qubit de baixo para traduzir."
+}

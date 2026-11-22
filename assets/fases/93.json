@@ -1,0 +1,59 @@
+{
+  "id": 93,
+  "titulo": "Tudo na bandeja",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S",
+    "CNOT",
+    "CZ",
+    "SWAP"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  "dica": "Comece pelo Bell da fase 6 e descubra o que falta: os qubits opostos e um sinal de menos.",
+  "explicacao": "O grande final começa com quase todas as portas na bandeja. O objetivo é o estado singleto, (|01⟩ − |10⟩)/√2: o par de Bell mais famoso, em que os dois qubits sempre dão resultados opostos, em qualquer direção em que forem medidos. Há muitos caminhos; o detector mostra o mínimo."
+}

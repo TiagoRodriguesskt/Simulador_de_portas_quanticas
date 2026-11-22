@@ -1,0 +1,81 @@
+{
+  "id": 99,
+  "titulo": "Corrigindo um erro",
+  "qubits": 3,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        2
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1,
+        2,
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "SWAP",
+    "TOFFOLI",
+    "CSWAP"
+  ],
+  "objetivo": {
+    "tipo": "bloch",
+    "qubit": 0,
+    "alvo": [
+      0.707107,
+      [
+        0.5,
+        0.5
+      ]
+    ]
+  },
+  "dica": "Copie o qubit 0 nos outros dois (CNOTs). No fim, se os dois ajudantes indicarem erro, corrija o qubit 0.",
+  "explicacao": "Qubits reais erram. O código de repetição protege um qubit contra inversões (X): espalhe o estado dele por três qubits com CNOTs. Depois, um erro (o X fixo) inverte o qubit 0. As CNOTs seguintes desfazem o espalhamento e deixam nos qubits 1 e 2 um 'sintoma': se os dois estiverem em 1, o erro foi no qubit 0. Uma porta que inverte o qubit 0 só quando os dois ajudantes são 1 conserta tudo, sem nunca medir o estado protegido."
+}

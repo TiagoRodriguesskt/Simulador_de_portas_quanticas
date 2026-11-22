@@ -1,0 +1,47 @@
+{
+  "id": 14,
+  "titulo": "Desfazendo o emaranhamento",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "H",
+    "Z",
+    "CNOT",
+    "S",
+    "T"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "00"
+  },
+  "dica": "Toda porta quântica tem um caminho de volta. Desfaça na ordem inversa.",
+  "explicacao": "Portas quânticas são reversíveis: toda transformação tem um caminho de volta. O circuito começa criando um par de Bell. Para voltar ao |00⟩, desfaça o que foi feito, na ordem inversa."
+}

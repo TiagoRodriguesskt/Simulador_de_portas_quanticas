@@ -1,0 +1,38 @@
+{
+  "id": 65,
+  "titulo": "A U que só gira a fase",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "Z",
+    "T",
+    "SDG",
+    "U",
+    "UX",
+    "US"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "dica": "Com θ = 0, a U não sai do lugar em latitude: só gira em torno do eixo z, pelo ângulo λ."
+}

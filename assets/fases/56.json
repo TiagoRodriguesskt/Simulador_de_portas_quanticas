@@ -1,0 +1,96 @@
+{
+  "id": 56,
+  "titulo": "De ZZ para XX",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "T",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "RZZ",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Z",
+    "H",
+    "S",
+    "SX",
+    "RY"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.353553,
+      [
+        0.5,
+        -0.353553
+      ],
+      [
+        0.0,
+        0.353553
+      ],
+      [
+        0.353553,
+        -0.5
+      ]
+    ]
+  },
+  "dica": "A H troca os eixos x e z. Em volta da Rzz, nos dois qubits, ela vira uma Rxx.",
+  "explicacao": "O circuito tem uma Rzz fixa, e o objetivo é o estado que uma Rxx daria. É a mesma ideia da fase 45, agora com dois qubits: a H troca os eixos x e z da esfera, então uma porta em volta de H vira a versão 'x' da original. Como a Rzz age nos dois qubits, os dois precisam ser traduzidos, antes e depois."
+}

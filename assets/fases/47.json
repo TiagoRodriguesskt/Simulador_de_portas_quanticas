@@ -1,0 +1,49 @@
+{
+  "id": 47,
+  "titulo": "A fase que aparece",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CZ",
+    "CY",
+    "CH",
+    "CP",
+    "CRZ"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.5,
+      0.5,
+      [
+        0.353553,
+        -0.353553
+      ],
+      [
+        0.353553,
+        0.353553
+      ]
+    ]
+  },
+  "dica": "Rz(π/2) e P(π/2) diferem só por uma fase global. Controladas, elas deixam de ser iguais."
+}

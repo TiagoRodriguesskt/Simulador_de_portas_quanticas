@@ -1,0 +1,32 @@
+{
+  "id": 26,
+  "titulo": "Meio NOT",
+  "qubits": 1,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "H",
+    "Z",
+    "S",
+    "SDG",
+    "T",
+    "SX"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "Não há X na bandeja. Mas o que acontece se você aplicar a √X duas vezes?"
+}

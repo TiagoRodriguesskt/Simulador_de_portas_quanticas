@@ -1,0 +1,51 @@
+{
+  "id": 90,
+  "titulo": "Outra fase para ler",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "X",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CY",
+    "CH"
+  ],
+  "objetivo": {
+    "tipo": "qubit",
+    "qubit": 0,
+    "valor": 1
+  },
+  "dica": "Agora o qubit de baixo está em |−⟩. Qual porta não muda o |−⟩, só o sinal dele?",
+  "explicacao": "A mesma estimativa de fase, mas o qubit de baixo começa em |−⟩. O Z não serve mais: Z|−⟩ = |+⟩, ele muda o estado. Procure a porta que deixa o |−⟩ como está, a menos de um sinal de menos."
+}

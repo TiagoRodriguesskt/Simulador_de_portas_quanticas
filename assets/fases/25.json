@@ -1,0 +1,50 @@
+{
+  "id": 25,
+  "titulo": "Bell com fase imaginária",
+  "qubits": 2,
+  "circuito": [
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "porta": "CNOT",
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "S",
+    "SDG",
+    "T",
+    "TDG"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      1,
+      0,
+      0,
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "dica": "Primeiro crie o par de Bell. Depois, gire a fase de |11⟩ um quarto de volta no sentido negativo.",
+  "explicacao": "Desafio do capítulo. O alvo é um par de Bell em que o |11⟩ ganha a fase −i: (|00⟩ − i|11⟩)/√2. As chances continuam 50% e 50%; só a fase muda. A bandeja tem todas as portas de um qubit que você conhece, mas a solução usa só duas."
+}

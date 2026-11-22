@@ -1,0 +1,43 @@
+{
+  "id": 61,
+  "titulo": "Iguais só às vezes",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "SWAP",
+    "ISWAP",
+    "RXX",
+    "SQSWAP"
+  ],
+  "objetivo": {
+    "tipo": "estado",
+    "alvo": [
+      0.707107,
+      [
+        0.353553,
+        0.353553
+      ],
+      [
+        0.353553,
+        -0.353553
+      ],
+      0.0
+    ]
+  },
+  "dica": "A Rxx e a √SWAP fazem o mesmo em |01⟩ e |10⟩, mas não em |00⟩. Aqui o |00⟩ aparece.",
+  "explicacao": "Na fase anterior, a Rxx fez o papel da √SWAP. Isso funcionou porque a entrada era |10⟩. Com |00⟩, as duas se separam: a √SWAP deixa o |00⟩ em paz (não há nada para trocar), e a Rxx cria um estado de Bell. Agora o qubit de baixo está em |+⟩, e o estado tem um pedaço |00⟩. Duas portas que trabalham iguais numa entrada podem ser diferentes em outra."
+}

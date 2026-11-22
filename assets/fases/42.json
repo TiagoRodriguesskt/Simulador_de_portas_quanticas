@@ -1,0 +1,33 @@
+{
+  "id": 42,
+  "titulo": "Girar sem espelhar",
+  "qubits": 1,
+  "circuito": [
+    {
+      "porta": "H",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0
+      ]
+    }
+  ],
+  "disponiveis": [
+    "X",
+    "Y",
+    "Z",
+    "H",
+    "SX",
+    "RX",
+    "RY"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "1"
+  },
+  "dica": "A H é um espelho: aplicada de novo, ela volta para |0⟩. A Ry continua girando no mesmo sentido."
+}

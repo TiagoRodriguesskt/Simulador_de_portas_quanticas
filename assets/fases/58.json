@@ -1,0 +1,38 @@
+{
+  "id": 58,
+  "titulo": "Meia troca",
+  "qubits": 2,
+  "circuito": [
+    {
+      "porta": "X",
+      "alvos": [
+        0
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    },
+    {
+      "slot": true,
+      "alvos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "disponiveis": [
+    "CNOT",
+    "CZ",
+    "CH",
+    "SQSWAP"
+  ],
+  "objetivo": {
+    "tipo": "probabilidade",
+    "ket": "01"
+  },
+  "dica": "Não há SWAP na bandeja. Mas metade de uma troca, duas vezes, é uma troca inteira."
+}
